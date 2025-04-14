@@ -1,0 +1,404 @@
+/* Base styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: white;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-button {
+    padding: 0.5rem 1rem;
+    background-color: #FF5A5F;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin-left: 10px;
+}
+
+.nav-button:hover {
+    background-color: #E04A50;
+}
+
+.logo {
+    height: 40px;
+}
+
+.login-button {
+    padding: 0.5rem 1rem;
+    background-color: #FF5A5F;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #E04A50;
+}
+
+/* Main content */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    flex: 1;
+    width: 100%;
+}
+
+/* Place cards */
+.place-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px 0;
+    display: flex;
+    gap: 20px;
+}
+
+.place-image {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.place-info {
+    flex: 1;
+}
+
+.details-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #FF5A5F;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.details-button:hover {
+    background-color: #E04A50;
+}
+
+.price {
+    font-weight: bold;
+    color: #FF5A5F;
+    margin: 10px 0;
+}
+
+/* Forms */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: #FF5A5F;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #E04A50;
+}
+
+/* Place Details */
+.place-details {
+    margin-bottom: 30px;
+}
+
+.amenities {
+    margin: 20px 0;
+}
+
+.amenities ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.amenities li {
+    margin-bottom: 8px;
+}
+
+/* Reviews */
+.review-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.reviewer {
+    font-weight: bold;
+}
+
+.rating {
+    color: #FFA500;
+    font-weight: bold;
+}
+
+.comment {
+    margin-top: 10px;
+}
+
+/* Form actions */
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.cancel-button {
+    padding: 0.5rem 1rem;
+    background-color: #6c757d;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.cancel-button:hover {
+    background-color: #5a6268;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-top: 1px solid #ddd;
+    margin-top: auto;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+    
+    .place-card {
+        flex-direction: column;
+    }
+    
+    .place-image {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Add Review Form Styles */
+.add-review {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.add-review h2 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #FF5A5F;
+    padding-bottom: 10px;
+}
+
+.add-review .place-info {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-left: 4px solid #FF5A5F;
+}
+
+.add-review .place-info h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.add-review .place-info p {
+    color: #FF5A5F;
+    font-weight: bold;
+    margin: 0;
+}
+
+.add-review .form-group {
+    margin-bottom: 20px;
+}
+
+.add-review label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.add-review select, 
+.add-review textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.add-review select:focus, 
+.add-review textarea:focus {
+    outline: none;
+    border-color: #FF5A5F;
+    box-shadow: 0 0 0 2px rgba(255, 90, 95, 0.2);
+}
+
+.add-review select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23FF5A5F' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+    padding-right: 30px;
+}
+
+.add-review textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.add-review .form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.add-review .cancel-button {
+    padding: 10px 16px;
+    background-color: #6c757d;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.add-review .cancel-button:hover {
+    background-color: #5a6268;
+}
+
+.add-review button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #FF5A5F;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.add-review button[type="submit"]:hover {
+    background-color: #E04A50;
+}
+
+/* Star rating display */
+.rating-input {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.rating-input input {
+    display: none;
+}
+
+.rating-input label {
+    cursor: pointer;
+    font-size: 25px;
+    color: #ddd;
+}
+
+.rating-input label:hover,
+.rating-input label:hover ~ label,
+.rating-input input:checked ~ label {
+    color: #FFA500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .add-review {
+        padding: 15px;
+    }
+    
+    .add-review .form-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .add-review .cancel-button,
+    .add-review button[type="submit"] {
+        width: 100%;
+        text-align: center;
+    }
+}

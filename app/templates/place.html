@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='icon.png') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index"><img src="{{ url_for('static', filename='Image_2-removebg-preview.png') }}" alt="Places Logo" class="logo"></a>
+            <div class="nav-links">
+                <a href="index" class="nav-button">Home</a>
+                <a href="login" class="login-button">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="place-details">
+            <h1>Urban studio</h1>
+            <p class="host">Hosted by John Doe</p>
+            <p class="price">$150/night</p>
+            <div class="description">
+                <h3>Description</h3>
+                <p>Small studio overlooking a garden with independent access. Very quiet environment.</p>
+            </div>
+            <div class="amenities">
+                <h3>Amenities</h3>
+                <ul>
+                    <li>WiFi</li>
+                    <li>Kitchen</li>
+                    <li>Free parking</li>
+                    <li>Fireplace</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="reviews">
+            <h2>Reviews</h2>
+            <div class="review-card">
+                <p class="reviewer">Jane Smith</p>
+                <p class="rating">★★★★☆ (4.5/5)</p>
+                <p class="comment">Great place to stay!.</p>
+            </div>
+            <div class="review-card">
+                <p class="reviewer">Mike Johnson</p>
+                <p class="rating">★★★★★ (5/5)</p>
+                <p class="comment">Perfect. We'll definitely be back!</p>
+            </div>
+        </section>
+
+        <section id="add-review-section">
+            <h2>Add a Review</h2>
+            <a href="review" class="details-button">Write a Review</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Places. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        const placeId = "{{ place_id }}";
+      </script>
+
+      <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>

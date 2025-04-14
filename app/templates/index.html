@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of Places</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='icon.png') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index"><img src="{{ url_for('static', filename='Image_2-removebg-preview.png') }}" alt="Places Logo" class="logo"></a>
+            <div class="nav-links">
+                <a href="index" class="nav-button">Home</a>
+                <a href="login" class="login-button">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="filter">
+            <label for="price-filter">Max Price:</label>
+            <select id="price-filter">
+                <option value="200">$200</option>
+                <option value="500">$500</option>
+                <option value="1000">$1000</option>
+            </select>
+        </section>
+
+        <section id="places-list">
+            <div class="place-card">
+                <div class="place-info">
+                    <h2>Urban studio</h2>
+                    <p class="price">$150/night</p>
+                    <a href="place" class="details-button">View Details</a>
+                </div>
+            </div>
+
+            <div class="place-card">
+                <div class="place-info">
+                    <h2>Pavilion with garden</h2>
+                    <p class="price">$200/night</p>
+                    <a href="place" class="details-button">View Details</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Places. All rights reserved.</p>
+    </footer>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>  
+</body>
+</html>
