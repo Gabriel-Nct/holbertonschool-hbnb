@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Place Details</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-    <link rel="icon" href="{{ url_for('static', filename='icon.png') }}">
+    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="icon" href="/static/icon.png">
 </head>
 <body>
     <header>
         <nav>
-            <a href="index"><img src="{{ url_for('static', filename='Image_2-removebg-preview.png') }}" alt="Places Logo" class="logo"></a>
+            <a href="index"><img src="/static/Image_2-removebg-preview.png" alt="Places Logo" class="logo"></a>
             <div class="nav-links">
                 <a href="index" class="nav-button">Home</a>
                 <a href="login" class="login-button">Login</a>
@@ -66,6 +66,6 @@
         const placeId = "{{ place_id }}";
       </script>
 
-      <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+      <script src="{/static/scripts.js"></script>
 </body>
 </html>
